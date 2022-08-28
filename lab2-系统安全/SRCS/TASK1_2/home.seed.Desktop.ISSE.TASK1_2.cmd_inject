@@ -1,0 +1,21 @@
+# Last Modified: Tue Jun 14 07:44:16 2022
+#include <tunables/global>
+
+/home/seed/Desktop/ISSE/TASK1_2/cmd_inject {
+  #include <abstractions/apache2-common>
+  #include <abstractions/base>
+  #include <abstractions/openssl>
+  #include <abstractions/postfix-common>
+  #include <abstractions/ssl_certs>
+  #include <abstractions/ubuntu-browsers.d/multimedia>
+
+  deny /usr/bin/cat x,
+
+  /home/seed/Desktop/ISSE/TASK1_2/ r,
+  /home/seed/Desktop/ISSE/TASK1_2/cmd_inject mr,
+  /usr/bin/dash mrix,
+  /usr/bin/ls ix,
+  /usr/bin/ncat mrix,
+  /usr/bin/whoami ix,
+
+}

@@ -1,0 +1,14 @@
+# Last Modified: Tue Jun 28 09:06:59 2022
+#include <tunables/global>
+
+/home/seed/Desktop/ISSE/TASK1_2/cmd_inject {
+  #include <abstractions/base>
+  #include <abstractions/postfix-common>
+
+  deny /usr/bin/ncat x,
+
+  /home/seed/Desktop/ISSE/TASK1_2/cmd_inject mr,
+  /usr/bin/cat mrix,
+  /usr/bin/dash mrix,
+
+}

